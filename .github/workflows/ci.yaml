@@ -2,7 +2,7 @@ name: HTML CI with Secret
 
 on:
   push:
-    branches: [main]
+    branches: [mastre]
     paths: ['.html']
 
 jobs:
