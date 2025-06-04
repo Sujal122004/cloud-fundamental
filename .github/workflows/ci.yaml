@@ -1,0 +1,19 @@
+name: HTML CI with Secret
+
+on:
+  push:
+    branches: [main]
+    paths: ['.html']
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use the CI_PIPELINE
+        run: |
+          echo "Using secret token CODEW..."
+          echo "Token value: ${{ secrets.CI_PIPELINE }}"
