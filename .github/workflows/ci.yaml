@@ -1,8 +1,8 @@
-name: HTML CI with Secret
+ name: HTML CI with Secret
 
 on:
   push:
-    branches: [mastre]
+    branches: [master]
     paths: ['.html']
 
 jobs:
