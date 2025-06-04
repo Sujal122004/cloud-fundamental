@@ -1,9 +1,9 @@
- name: HTML CI with Secret
+name: HTML CI with Secret
 
 on:
   push:
     branches: [master]
-    paths: ['.html']
+    paths: ['*.html']
 
 jobs:
   example-job:
@@ -16,4 +16,4 @@ jobs:
       - name: Use the CI_PIPELINE
         run: |
           echo "Using secret token CODEW..."
-          echo "Token value: ${{ secrets.CI_PIPELINE }}"
+          echo "Token value: ${{ secrets.CI_PIPELINE }}"
